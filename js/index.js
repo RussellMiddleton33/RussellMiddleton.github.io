@@ -23,7 +23,8 @@ var days = [
   'March21',
   'March22',
   "March23",
-  "March24"
+  "March24",
+  "March25"
   ];
   function filterBy(day) {
     var filters = ['==', 'date', days[day]];
@@ -158,7 +159,7 @@ map.on('click', 'cov19-circles', function(e) {
       map.getCanvas().style.cursor = '';
       popup.remove();
       });
-    filterBy(14);
+    filterBy(15);
     document
     .getElementById('slider')
     .addEventListener('input', function(e) {
